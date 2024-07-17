@@ -1,5 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { ADMIN_ROUTE, BASKET_ROUTE, DEVICE_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE } from '../utils/consts.ts'
+import {
+	ADMIN_ROUTE,
+	BASKET_ROUTE,
+	DEVICE_ROUTE,
+	LOGIN_ROUTE,
+	REGISTRATION_ROUTE,
+	SHOP_ROUTE
+} from '../utils/consts.ts'
 import { AdminPage } from '../pages/AdminPage.tsx'
 import { BasketPage } from '../pages/BasketPage.tsx'
 import { ShopPage } from '../pages/ShopPage.tsx'
@@ -17,8 +24,8 @@ export const router = createBrowserRouter([
 		element: <BasketPage />
 	},
 	{
-		path: '/',
-		component: <ShopPage />
+		path: SHOP_ROUTE,
+		element: <ShopPage />
 	},
 	{
 		path: LOGIN_ROUTE,

@@ -1,3 +1,9 @@
+import { Header } from '../components/Header.tsx'
+
 export const ShopPage = () => {
-	return <div>ShopPage</div>
+	return (
+		<div>
+			<Header />
+		</div>
+	)
 }
