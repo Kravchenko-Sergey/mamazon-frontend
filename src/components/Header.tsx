@@ -29,7 +29,7 @@ export const Header = observer(() => {
 })
 
 const Root = styled.div`
-	background-color: darkgrey;
+	padding: 0 24px;
 `
 
 const Container = styled.div`
@@ -48,10 +48,11 @@ const LogoBox = styled.div`
 const LogoImg = styled(BsEmojiGrin)`
 	width: 24px;
 	height: 24px;
+	color: #005bfe;
 `
 
 const LogoText = styled.h1`
-	display: flex;
+	color: #005bfe;
 `
 
 const BtnBox = styled.div`
@@ -61,9 +62,27 @@ const BtnBox = styled.div`
 `
 
 const SignInBtn = styled.button`
-	display: flex;
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #005bfe;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #2171ff;
+	}
 `
 
 const SignUpBtn = styled.button`
-	display: flex;
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #005bfe;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #2171ff;
+	}
 `
